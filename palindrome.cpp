@@ -59,4 +59,12 @@ int main() {
     reversedWord[c] = '\0';
 
     cout << '\n' << "Original: " << originalWord << " / " << "Reversed: " << reversedWord << '\n' << endl;
+
+    if (strcmp(originalWord, reversedWord) == 0) {
+        cout << originalWord << " is a palindrome." << endl;
+    } else {
+        cout << originalWord << " is not a palindrome." << endl;
+    }
+
+    return 0;
 }
